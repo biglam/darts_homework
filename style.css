@@ -1,0 +1,75 @@
+body{
+  background: url('http://www.lifestyleuncut.com/wp-content/uploads/2013/01/darts.jpg');
+  background-size: cover;
+  text-align: center;
+  color: black;
+  font-family: verdana, arial, sans-serif;
+}
+
+div.main {
+  background-color: rgba(255,255,255,0.4);
+  height: 700px;
+  width: 75%;
+  margin: auto;
+}
+
+div#welcome, div#getnames {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+div#getnames {
+  display: none;
+}
+
+div#errors {
+  background-color: red;
+  color: white;
+  display: none;
+}
+
+div.inputdiv {
+/*  background-color: blue;*/
+/*float: left;*/
+opacity: 0.8;
+width: 655px;
+margin: auto;
+}
+
+div.inputdiv ul {
+  float: left;
+}
+
+div#p1input {
+  background-color: lightblue;
+  border-bottom: 1px solid blue;
+  border-right: 1px solid blue;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+div#p2input {
+  display: none;
+  background-color: lightgreen;  
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+div.scorelist {
+  width: 300px;
+  height: 500px;
+  display: inline-table;
+  margin: 25px;
+}
+
+
+div#p1display {
+  background: linear-gradient(lightblue, rgba(0, 0, 0, 0));
+
+}
+
+div#p2display {
+  background: linear-gradient(lightgreen, rgba(0, 0, 0, 0));
+
+}

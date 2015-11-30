@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Darts Score Counter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Darts Score Checker</h1>
+    <div id="welcome" class="notice">
+      <strong>Welcome</strong>
+      <p>This app keeps log of your darts games. You can enter names using the link below, and enter scores into the text-box. Scores can be entered either as a total of 3 shots (eg. 180), or as individual darts seperated by spaces (eg. T20 D16 2).
+      <p><a href="#" id='addnames'>Change Names</a></p>
+      <p><a href="#" id='closewindow'>Hide this message</a></p>
+    </div>
+
+    <div id='getnames' class="notice">
+    <strong>Enter your names here:</strong><br>
+    <form action='#' id='names'>
+      <label for="p1name">Player1</label><input id="p1name" type="text" name="p1name" value="Player1"/><br>
+      <label for="p2name">Player2</label><input id="p2name" type="text" name="p2name" value="Player2"/><br>
+      <button id='names'>Set Names</button>
+      </form>
+    </div>
+    <div id='errors' class='notice'>
+      <ul id='errorlist'>
+        
+      </ul>
+    </div>
+    <div id='p1input' class="inputdiv">
+      <form action="#" method="POST" id="p1details">
+
+        <label for="p1score">Player1 Score</label><input id="p1score" class="score" type="text" name="p1score" value="0"/>
+        <button name="submit" id="submit">Enter</button>
+
+      </form>
+    </div>
+    <div id='p2input' class="inputdiv">
+      <form action="#" method="POST" id="p2details">
+
+        <label for="p2score">Player2 Score</label><input id="p2score" class="score" type="text" name="p2score" value="0" />
+        <button name="submit" id="submit">Enter</button>
+
+      </form>
+    </div>
+
+    <div id='p1display' class="scorelist">
+      <h2>Player 1</h2>
+      <ul id='p1list'>
+        <li>501</li>
+      </ul>
+    </div>
+    <div id='p2display' class="scorelist">
+      <h2>Player 2</h2>
+      <ul id='p2list'>
+        <li>501</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <script src="application.js"></script>
+  </html>
